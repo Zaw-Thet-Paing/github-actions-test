@@ -1,10 +1,13 @@
 name: First Workflow
-on: 
+
+on:
   push:
   pull_request:
-  jobs:
-    say-hello:
-      runs-on: ubuntu-latest
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Print a welcome message
         run: echo "👋 Hello from GitHub Actions!"
