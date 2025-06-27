@@ -1,0 +1,12 @@
+name: Second Workflow
+
+on:
+  pull_request:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a welcome message
+        run: echo "This action will work when get pull request"
